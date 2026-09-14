@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import 'tailwindcss';
+
+@theme inline {
+  --color-background: #f5f0e8;
+  --color-foreground: #1a1713;
+  --color-card: #faf7f2;
+  --color-card-foreground: #1a1713;
+  --color-primary: #2d5a27;
+  --color-primary-foreground: #f5f0e8;
+  --color-secondary: #e8e2d6;
+  --color-muted: #d4ccc0;
+  --color-muted-foreground: #7a7165;
+  --color-accent: #c85a2a;
+  --color-border: #c8bfb0;
+  --color-ring: #2d5a27;
+  --radius: 3px;
+  --font-sans: 'DM Sans', sans-serif;
+  --font-display: 'DM Serif Display', serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--color-muted); border-radius: 2px; }
+
+input:focus { outline: none; }
+button:focus-visible { outline: 2px solid var(--color-ring); outline-offset: 2px; }
